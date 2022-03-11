@@ -1,2 +1,4 @@
 # PyCam
-Find installed cameras (onboard/usb), display the feed, take photo and catalog it accordingly.
+<p>This script will first check for a settings file, which would contain not only which video feed to use (if multiple cameras are on a computer), but which drive letter the folder tree and the image file will eventually be stored once captured. The file will be stored as Drive:/YYYY/MM/DD/HH (AM/PM)/User#-YYMMDD-HHMM-SS.JPG for the user (in this case a dentist) to match against their schdule to easily identify which patient the image goes to.
+<p> The program then brings up the earlier mentioned camera feed, and a camera trigger (simulating a space bar key) will trigger the capture, which checks to see if a the appropriate folder is available, and then generates a file path and filename to save the image.
+<p> After the image is captured, it brings up the still image for review, it (at the time of this writeup) would need to be exited manually before a new image can be captured as it's in a while loop waiting for the window to close (any future development will look into an exit button that won't exit the video feed.
